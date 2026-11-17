@@ -1,0 +1,21 @@
+{
+  "name": "dra-bianka-andrade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page da Dra. Bianka Andrade, cirurgiã-dentista em Camaragibe - PE",
+  "scripts": {
+    "start": "http-server . -p 4173 -c-1 --silent",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://localhost:4173 cy:run",
+    "test:headed": "start-server-and-test start http://localhost:4173 \"cypress run --headed --browser chrome\"",
+    "test:prod": "cypress run --config baseUrl=https://josepachecoqa.github.io/dra-bianka-andrade/"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.1",
+    "cypress": "^15.21.2",
+    "cypress-axe": "^1.7.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^3.0.13"
+  }
+}
